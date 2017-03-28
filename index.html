@@ -14,8 +14,34 @@
 	<![endif]-->	
 	<style>
 		* { padding: 0; margin: 0; }
-		body { background-color: #333; }
-		p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
+/*		
+        body { background-color: #333; }
+*/
+        body {
+                animation: colorchange 60s infinite; /* animation-name followed by duration in seconds*/
+                /* you could also use milliseconds (ms) or something like 2.5s */
+                -webkit-animation: colorchange 60s infinite; /* Chrome and Safari */
+        }
+
+        @keyframes colorchange
+        {
+            0%   {background: #076461;}
+            25%  {background: #FF3D00;}
+            50%  {background: #FFBC11;}
+            75%  {background: #0A837F;}
+            100% {background: #076461;}
+        }
+
+        @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+        {
+            0%   {background: red;}
+            25%  {background: yellow;}
+            50%  {background: blue;}
+            75%  {background: green;}
+            100% {background: red;}
+        }
+
+        p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
 		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
 		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
 		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
@@ -28,11 +54,12 @@
 	</style>
 </head>	
     
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 <body>
 
 <!-- swap out for a logo -->
 <div id="monogram">
-	<img src="monogram.png" />
+	<img src="img.png" />
 </div>
 
 <!-- swap out for information about yourself -->
@@ -49,7 +76,7 @@
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
-             $.backstretch("nh_bg.jpg", {speed: 150});
+             $.backstretch("bg.jpg", {speed: 150});
          }
       })
       .resize();//trigger resize on page load
