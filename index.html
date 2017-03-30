@@ -18,7 +18,32 @@
         body { background-color: #333; }
 */
 
-/* BACKGROUND COLOURCHANGE - start */
+        /* LOGO FONT STYLING - start */
+        @import url(http://fonts.googleapis.com/css?family=Mr+Dafoe);
+
+        .logo {
+            position: absolute;
+            margin: 0px;
+            font-family: 'Mr Dafoe', cursive;
+            font-size: 160px;
+            color: #F975F7 ;
+            transform:rotate(-15deg);
+            -ms-transform:rotate(-15deg); /* IE 9 */
+            -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+            margin-left: auto;
+            margin-top: auto;
+            -webkit-text-stroke: 1px #f008b7;
+            -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+            z-index: 20;
+        }
+
+        .windows .logo {
+            -webkit-text-stroke: 4px #f008b7;
+        }
+        /* LOGO FONT STYLING - end */
+
+
+        /* BACKGROUND COLOURCHANGE - start */
         body {
                 animation: colorchange 60s infinite; /* animation-name followed by duration in seconds*/
                 /* you could also use milliseconds (ms) or something like 2.5s */
@@ -27,22 +52,24 @@
 
         @keyframes colorchange
         {
-            0%   {background: #076461;}
-            25%  {background: #FF3D00;}
-            50%  {background: #FFBC11;}
-            75%  {background: #0A837F;}
+            0%   {background: #1C032B;}
+            10%  {background: #DF1B63;}
+            30%  {background: #E99E00;}
+            70%  {background: #4AEF15;}
+            90%  {background: #3ACCCB;}
             100% {background: #076461;}
         }
 
         @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
         {
-            0%   {background: #076461;}
-            25%  {background: #FF3D00;}
-            50%  {background: #FFBC11;}
-            75%  {background: #0A837F;}
+            0%   {background: #1C032B;}
+            10%  {background: #DF1B63;}
+            30%  {background: #E99E00;}
+            70%  {background: #4AEF15;}
+            90%  {background: #3ACCCB;}
             100% {background: #076461;}
         }
-/* BACKGROUND COLOURCHANGE - end */
+        /* BACKGROUND COLOURCHANGE - end */
 
         p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
 		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
@@ -62,12 +89,14 @@
 <body>
     <!-- swap out for a logo -->
     <div id="monogram">
+        <h1>Kaif Ahmed</h1>
+        <h1 class="logo">Kaif</h1>
 	    <img src="img.png" />
     </div>
 
     <!-- swap out for information about yourself -->
     <div id="about">
-	    <p>Kaif Ahmed is an engineer who has been floating around the industry for a few years. In a previous life he worked on a few videos and other bits. When he's not writing stuff for his Blog he's usually found wondering around London taking pictures of things. He's also been spotted streaming his consciousness via the medium of Twitter.</p>
+	    <p>Kaif Ahmed is an computer storage engineer who has been floating around the industry for a few years. In a previous life he worked on a few videos and other bits. When he's not writing stuff for his Blog he's usually found wondering around London taking pictures of things. He's also been spotted streaming his consciousness via the medium of Twitter.</p>
         <p>// Twitter: <a href="http://twitter.com">@BrotherKaif</a></p> 
     </div>
 
