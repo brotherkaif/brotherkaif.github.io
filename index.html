@@ -8,34 +8,71 @@
                                         border: 0;
                                         margin: 0;
                                 }
-                                
-                                .page-block {
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%);
+
+                                body {
+                                        font-size: 1em;
+                                }
+
+                                .name-logo-block {
+                                        width: 500px;
+                                        margin: 0 auto 0 auto;
+                                        border: 1px red dotted;
+                                }
+
+                                .name-logo-block h1 {
+                                        font-size: 800%;
+                                        margin: 20% 0 0 0;
+                                }
+
+                                .bio-block {
+                                        width: 500px;
+                                        margin: 0 auto 0 auto;
+                                        border: 1px red dotted;
+                                }
+
+                                .bio-block p {
+                                        font-size: 150%;
+                                        margin: 0;
+                                }
+
+                                .social-block {
+                                        width: 500px;
+                                        margin: 0 auto 0 auto;
+                                        text-align: center;
+                                        border: 1px red dotted;
+                                }
+
+                                .social-block ul {
+                                        display: inline-block;
+                                        padding: 0;
+                                        margin: 0;
+                                }
+
+                                .social-block li {
+                                        float: left;
+                                        list-style-type: none;
+                                        padding: 5px 5px 5px 5px;
+                                        border: 1px red dotted;
                                 }
                         </style>
         </head>	
         <body>
-                <div class="page-block">
-                        <div class="name-logo-block">
-                                <h1>Kaif Ahmed</h1>
-                        </div>
-                        <div class="bio-block">
-                                <p>Computer storage engineer based in London; Easily distracted by gaming, music, geeky stuff and cats.</p>
-                        </div>
-                        <div class="social-block">
-                                <ul>
-                                    <li>LinkedIn: <a href="https://www.linkedin.com/in/kaifahmed" target=_blank>KaifAhmed</a></li>
-                                    <li>Twitter: <a href="https://www.twitter.com/brotherkaif" target=_blank>@brotherkaif</a></li>
-                                    <li>Instagram: <a href="https://www.instagram.com/brotherkaif" target=_blank>@brotherkaif</a></li>
-                                    <li>GitHub: <a href="https://github.com/brotherkaif" target=_blank>brotherkaif</a></li>
-                                    <li>Blog: <a href="https://brotherkaif.blogspot.co.uk" target=_blank>Brother Kaif</a></li>
-                                    <li>Facebook: <a href="https://www.facebook.com/brotherkaif" target=_blank>brotherkaif</a></li>
-                                    <li>Steam: <a href="http://steamcommunity.com/id/brotherkaif" target=_blank>Brother Kaif</a></li>
-                                </ul>
-                        </div>
-                </div>
+               <div class="name-logo-block">
+                       <h1>Kaif Ahmed</h1>
+               </div>
+               <div class="bio-block">
+                       <p>Computer storage engineer based in London; Easily distracted by gaming, music, geeky stuff and cats.</p>
+               </div>
+               <div class="social-block">
+                       <ul>
+                           <li><a href="https://www.linkedin.com/in/kaifahmed" target=_blank class="LinkedIn">LinkedIn</a></li>
+                           <li><a href="https://www.twitter.com/brotherkaif" target=_blank class="Twitter">Twitter</a></li>
+                           <li><a href="https://www.instagram.com/brotherkaif" target=_blank class="Instagram">Instagram</a></li>
+                           <li><a href="https://github.com/brotherkaif" target=_blank class="GitHub">GitHub</a></li>
+                           <li><a href="https://brotherkaif.blogspot.co.uk" target=_blank class="Blogger">Blog</a></li>
+                           <li><a href="https://www.facebook.com/brotherkaif" target=_blank class="Facebook">Facebook</a></li>
+                           <li><a href="http://steamcommunity.com/id/brotherkaif" target=_blank class="Steam">Steam</a></li>
+                       </ul>
+               </div>
         </body>	
 </html>
