@@ -6,6 +6,7 @@
 <html>
     <head>
         <title>Kaif Ahmed</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css?family=Megrim|Roboto+Slab');
             html, body, h1, p, ul, li {
@@ -19,35 +20,31 @@
             body {
                 /* Location of the image */
                 background-image: url(images/bg.jpg);
-
                 /* Background image is centered vertically and horizontally at all times */
                 background-position: center center;
-
                 /* Background image doesn't tile */
                 background-repeat: no-repeat;
-                                                        
                 /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
                 background-attachment: fixed;
-                                                              
                 /* This is what makes the background image rescale based on the container's size */
                 background-size: cover;
-                                                                        
                 /* Set a background color that will be displayed while the background image is loading */
                 background-color: #464646;
-                
                 font-size: 1em;
                 color: #ffffff; 
             }
 
-                            
-
             .content-block {
-                padding-top: 10%; 
+                padding: 1em;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
             }
 
             .name-logo-block {
-                width: 420px;
-                margin: 0 auto 0 auto;
+                margin: 0 auto 2% auto;
             }
 
             .name-logo-block h1 {
@@ -59,8 +56,7 @@
             }
 
             .bio-block {
-                width: 420px;
-                margin: 0 auto 1% auto;
+                margin: 0 auto 3% auto;
             }
 
             .bio-block p {
@@ -72,7 +68,6 @@
             }
 
             .social-block {
-                width: 500px;
                 margin: 0 auto 0 auto;
                 text-align: center;
             }
