@@ -20,6 +20,7 @@ a { color: inherit; }
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-around;
     width: 35vw;
     height: 100vh;
     padding: 0;
@@ -42,7 +43,6 @@ a { color: inherit; }
     width: 320px;
     text-align: right;
     padding: 10px 20px;
-    border: 1px solid red;
 }
 
 .info__name {
@@ -62,7 +62,6 @@ a { color: inherit; }
 .contact {
     width: 160px;
     padding: 0 20px;
-    border: 1px solid red;
 }
 
 .contact__services {
@@ -77,6 +76,28 @@ a { color: inherit; }
 
 .contact__services__service {
     font-size: 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .info {
+        width: 232px;
+    }
+
+    .info__name {
+        font-size: 56px;
+    }
+
+    .info__description {
+        font-size: 24px;
+    }
+
+    .contact {
+        width: 112px;
+    }
+
+    .contact__services__service {
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
