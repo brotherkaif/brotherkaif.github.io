@@ -71,6 +71,7 @@ a { color: inherit; }
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
+    margin: 0;
     color: #E54B4B;
 }
 
@@ -97,10 +98,12 @@ a { color: inherit; }
     .page__main {
         width: auto;
     }    
-
+    
     .info {
+        flex-grow: 1;
         text-align: left;
-        width: 65vw;
+        width: 160px;
+        padding: 5px 10px;
     }
 
     .info__name {
@@ -108,12 +111,13 @@ a { color: inherit; }
     }
 
     .info__description {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .contact {
-        width: 35vw;
+        width: 160px;
         margin: 0;
+        padding: 5px 10px;
     }
 
     .contact__services {
