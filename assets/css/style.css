@@ -107,15 +107,11 @@ a { color: inherit; }
 
 
 @media only screen and (max-width: 420px) {
-    .page__info {
-        height: 104px;
-    }
+
 
     .info {
         width: 136px;
     }
 
-    .page__main {
-        margin-top: 104px;
-    }
+
 }
