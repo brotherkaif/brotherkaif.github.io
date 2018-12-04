@@ -1,0 +1,44 @@
+.contact {
+  width: 160px;
+  padding: 0 20px;
+}
+
+.contact__services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #E54B4B;
+}
+
+.contact__services__service {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    width: 112px;
+  }
+
+  .contact__services__service {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    width: 160px;
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  .contact__services {
+    justify-content: space-around;
+  }
+
+  .contact__services__service {
+    font-size: 24px;
+  }
+}

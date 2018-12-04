@@ -4,64 +4,17 @@
 /* --- Layouts --- */
 @import url('layouts/page.css');
 @import url('layouts/info.css');
+@import url('layouts/contact.css');
 
 /* --- Fonts --- */
 body {
-    margin:0;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Hind', sans-serif;
+  margin:0;
+  font-family: 'Hind', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 a { color: inherit; }
-
-.contact {
-    width: 160px;
-    padding: 0 20px;
-}
-
-.contact__services {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: #E54B4B;
-}
-
-.contact__services__service {
-    font-size: 32px;
-}
-
-@media only screen and (max-width: 1024px) {
-
-
-    .contact {
-        width: 112px;
-    }
-
-    .contact__services__service {
-        font-size: 24px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    
-    
-    .contact {
-        width: 160px;
-        margin: 0;
-        padding: 5px 10px;
-    }
-
-    .contact__services {
-        justify-content: space-around;
-    }
-
-    .contact__services__service {
-        font-size: 24px;
-    }
-}
-
-
