@@ -1,0 +1,55 @@
+.info {
+  width: 320px;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.info__name {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 72px;
+  color: #E54B4B;
+  margin: 0;
+  line-height: 1.0;
+}
+
+.info__description {
+  font-size: 32px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .info {
+    width: 232px;
+  }
+
+  .info__name {
+    font-size: 56px;
+  }
+
+  .info__description {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info {
+    text-align: left;
+    width: 224px;
+    padding: 5px 10px;
+  }
+
+  .info__name {
+    font-size: 32px;
+  }
+
+  .info__description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .info {
+    width: 136px;
+  }
+}
