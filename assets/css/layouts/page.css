@@ -1,6 +1,6 @@
 .page {
-    display: grid;
-    grid-template-columns: 35vw auto;
+  display: grid;
+  grid-template-columns: 35vw auto;
 }
 
 .page__info {
@@ -20,33 +20,33 @@
 }
 
 .page__main {
-    grid-column-start: 2;
-    padding: 0 20px;
-    background: #F7EBE8;
-    color: #1E1E24;
-    display: flex;
-    flex-direction: column;
+  grid-column-start: 2;
+  padding: 0 20px;
+  background: #F7EBE8;
+  color: #1E1E24;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .page {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .page__info {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      height: 72px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 72px;
   }
   
   .page__main {
-      width: auto;
-      margin-top: 72px;
+    width: auto;
+    margin-top: 72px;
   } 
 }
 
