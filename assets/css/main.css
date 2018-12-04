@@ -111,19 +111,19 @@ a { color: inherit; }
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: relative;
-        width: auto;
-        height: auto;
+        position: fixed;
+        width: 100%;
+        height: 72px;
     }
     
     .page__main {
         width: auto;
+        margin-top: 72px;
     }    
     
     .info {
-        flex-grow: 1;
         text-align: left;
-        width: 160px;
+        width: 224px;
         padding: 5px 10px;
     }
 
@@ -147,5 +147,20 @@ a { color: inherit; }
 
     .contact__services__service {
         font-size: 24px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .page__info {
+        height: 104px;
+    }
+
+    .info {
+        width: 136px;
+    }
+
+    .page__main {
+        margin-top: 104px;
     }
 }
