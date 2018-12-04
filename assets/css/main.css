@@ -11,7 +11,7 @@ a { color: inherit; }
 
 .page {
     display: grid;
-    grid-template-columns: calc(35vw + 40px) auto;
+    grid-template-columns: 35vw auto;
 }
 
 .page__info {
