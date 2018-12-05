@@ -6,6 +6,9 @@
 @import url('layouts/info.css');
 @import url('layouts/contact.css');
 
+/* --- Components --- */
+@import url('components/card.css');
+
 /* --- Fonts --- */
 body {
   margin:0;
