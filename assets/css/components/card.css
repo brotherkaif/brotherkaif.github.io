@@ -6,12 +6,26 @@
   color: white;
   position: relative;
 }
+
 .card__technologies {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
+.card__technologies__technology {
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+
 .card__description {
   position: absolute;
   bottom: 10px;
