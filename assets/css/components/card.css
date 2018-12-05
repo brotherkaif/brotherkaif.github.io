@@ -6,43 +6,32 @@
   color: white;
   position: relative;
 }
-.card__user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
 .card__technologies {
   position: absolute;
   top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
+  right: 10px;
+  font-size: 24px;
 }
 .card__description {
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
-.card__description h2 {
+.card__description__title {
   font-size: 24px;
 }
-.card__description p {
-  font-size: 14px;
-  opacity: 0.7;
+.card__description__content {
+  font-size: 16px;
   font-weight: lighter;
 }
-.card__link {
+
+.card__links {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-  background: black;
-  opacity: 0;
+  right: 10px;
+  bottom: 10px;
 }
-.card__link:hover {
-  opacity: 0.1;
+
+.card__links__link {
+  margin: 0;
+  font-size: 16px;
 }
