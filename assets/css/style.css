@@ -6,6 +6,9 @@
 @import url('layouts/info.css');
 @import url('layouts/contact.css');
 
+/* --- Components --- */
+@import url('components/card.css');
+
 /* --- Fonts --- */
 body {
   margin:0;
@@ -17,4 +20,11 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-a { color: inherit; }
+a {
+  color: #E54B4B;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFA987;
+}

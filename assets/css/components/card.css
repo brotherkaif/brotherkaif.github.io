@@ -1,0 +1,113 @@
+.card {
+  height: 232px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.card__technologies {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__technologies__technology {
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+.card__description {
+  position: absolute;
+  left: 0px;
+  width: calc(60% - 24px);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+.card__description__title {
+  font-size: 24px;
+  padding: 0 24px;
+}
+
+.card__description__content {
+  font-size: 16px;
+  padding: 0 24px;
+}
+
+.card__links {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: calc(40% - 10px);
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__links__link {
+  margin: 0;
+  font-size: 16px;
+  height: 32px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .card__description {
+    width: calc(70% - 24px);
+  }
+
+  .card__technologies__technology {
+    font-size: 16px;
+  }
+
+  .card__links {
+    width: calc(30% - 10px);
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    height: 328px;
+  }
+
+  .card__description {
+    top: 0px;
+    width: 100%;
+  }
+
+  .card__description__title {
+    padding: 24px 24px 0 24px;
+  }
+
+  .card__description__content {
+    padding: 0 24px 24px 24px;
+  }
+
+  .card__links {
+    width: 100%;
+    right: initial;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card__links__link {
+    margin: 0;
+    font-size: 16px;
+  } 
+}
