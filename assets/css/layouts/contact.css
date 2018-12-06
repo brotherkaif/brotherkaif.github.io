@@ -1,5 +1,5 @@
 .contact {
-  width: 160px;
+  width: 120px;
   padding: 0 20px;
 }
 
@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 1024px) {
   .contact {
-    width: 112px;
+    width: 96px;
   }
 
   .contact__services__service {
@@ -29,7 +29,7 @@
 
 @media only screen and (max-width: 768px) {
   .contact {
-    width: 160px;
+    width: 120px;
     margin: 0;
     padding: 5px 10px;
   }
