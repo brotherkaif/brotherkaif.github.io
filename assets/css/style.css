@@ -8,6 +8,7 @@
 
 /* --- Components --- */
 @import url('components/card.css');
+@import url('components/skillgroup.css');
 
 /* --- Fonts --- */
 body {
