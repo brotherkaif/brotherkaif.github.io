@@ -7,6 +7,7 @@
 @import url('layouts/contact.css');
 @import url('layouts/cover.css');
 @import url('layouts/about.css');
+@import url('layouts/projects.css');
 
 /* --- Components --- */
 @import url('components/card.css');
