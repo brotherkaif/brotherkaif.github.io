@@ -6,11 +6,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .cover__intro {
   color: #F7EBE8;
-  text-align: center;
   font-size: 24px;
   font-weight: bold;
 }
@@ -26,7 +26,7 @@
     height: calc(100vh - 72px);
   }
   .cover__intro {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
