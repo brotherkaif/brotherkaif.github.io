@@ -1,9 +1,13 @@
 .contact {
-  width: 200px;
+  display: flex;
+  height: 120px;
+  flex-direction: column;
+  align-items: flex-end;
   padding: 0 20px;
 }
 
 .contact__services {
+  width: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,7 +23,10 @@
 
 @media only screen and (max-width: 1024px) {
   .contact {
-    width: 144px;
+    height: 88px;
+  }
+  .contact__services {
+    width: 96px;
   }
 
   .contact__services__service {
@@ -29,16 +36,36 @@
 
 @media only screen and (max-width: 768px) {
   .contact {
-    width: 144px;
-    margin: 0;
-    padding: 5px 10px;
-  }
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  } 
 
   .contact__services {
+    width: 120px;
+    margin: 0;
+    padding: 5px 10px;
     justify-content: space-around;
   }
 
   .contact__services__service {
     font-size: 24px;
   }
+}
+
+@media only screen and (max-width: 496px) {
+  .contact {
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .contact__services {
+    width: 96px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+
 }

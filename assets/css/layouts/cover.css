@@ -30,7 +30,7 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 496px) {
   .cover {
     height: calc(100vh - 104px);
   }
