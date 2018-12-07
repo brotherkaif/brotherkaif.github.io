@@ -1,7 +1,7 @@
 .cover {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('../../images/page/cover.png');
+  background-image: linear-gradient(rgba(30,30,36,0.9), rgba(30,30,36,0.8)), url('../../images/page/cover.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -11,16 +11,30 @@
 .cover__intro {
   color: #F7EBE8;
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cover__intro {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .cover {
     height: calc(100vh - 72px);
   }
+  .cover__intro {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
   .cover {
     height: calc(100vh - 104px);
+  }
+  .cover__intro {
+    font-size: 16px;
   }
 }
