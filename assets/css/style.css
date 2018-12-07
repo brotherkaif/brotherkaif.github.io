@@ -11,6 +11,7 @@
 @import url('layouts/skills.css');
 
 /* --- Components --- */
+@import url('components/button.css');
 @import url('components/card.css');
 @import url('components/skillgroup.css');
 
@@ -28,6 +29,7 @@ h1, h2 {
 a {
   color: #E54B4B;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
