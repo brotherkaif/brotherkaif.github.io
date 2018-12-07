@@ -35,3 +35,8 @@ a {
 a:hover {
   color: #FFA987;
 }
+
+/* --- Behaviour --- */
+html {
+  scroll-behavior: smooth;
+}
