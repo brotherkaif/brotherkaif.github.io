@@ -35,3 +35,33 @@ a {
 a:hover {
   color: #FFA987;
 }
+
+/* --- Global Behaviour --- */
+html {
+  scroll-behavior: smooth;
+}
+
+  :target::before {
+    content: "";
+    display: block;
+    height: 16px; /* fixed header height*/
+    margin: -16px 0 0; /* negative fixed header height */
+  }
+
+@media only screen and (max-width: 768px) {
+  :target::before {
+    content: "";
+    display: block;
+    height: 88px; /* fixed header height*/
+    margin: -88px 0 0; /* negative fixed header height */
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  :target::before {
+    content: "";
+    display: block;
+    height: 120px; /* fixed header height*/
+    margin: -120px 0 0; /* negative fixed header height */
+  }
+}
