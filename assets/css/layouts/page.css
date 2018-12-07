@@ -21,7 +21,7 @@
 
 .page__main {
   grid-column-start: 2;
-  padding: 0 20px;
+  padding: 0;
   background: #F7EBE8;
   color: #1E1E24;
   display: flex;
