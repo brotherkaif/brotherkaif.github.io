@@ -6,6 +6,9 @@
 @import url('layouts/info.css');
 @import url('layouts/contact.css');
 @import url('layouts/cover.css');
+@import url('layouts/about.css');
+@import url('layouts/projects.css');
+@import url('layouts/skills.css');
 
 /* --- Components --- */
 @import url('components/card.css');
